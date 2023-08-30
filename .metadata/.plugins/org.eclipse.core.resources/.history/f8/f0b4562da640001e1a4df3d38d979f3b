@@ -1,0 +1,25 @@
+package day05;
+
+public class String01 {
+
+	public static void main(String[] args) {
+		/* String 클래스 = 문자열을 다루는 클래스
+		 * String str = new String();
+		 * String str = "가나다"; //일반 자료형처럼 이용이 가능.
+		 * index 0번지부터 시작
+		 */
+		
+		String str = "Hello World~!!";
+		System.out.println(str);
+		
+		//charAt(index) : index번지에 있는 한글자를 반환
+		System.out.println("--charAt--");
+		System.out.println(str.charAt(0));
+		System.out.println(str.charAt(1));
+		System.out.println(str.charAt(2));
+		System.out.println(str.charAt(3));
+		System.out.println(str.charAt(6));
+
+	}
+
+}

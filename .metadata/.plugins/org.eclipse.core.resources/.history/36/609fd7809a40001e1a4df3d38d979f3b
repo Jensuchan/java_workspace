@@ -1,0 +1,27 @@
+package day05;
+
+import java.util.Scanner;
+
+public class Array04 {
+
+	public static void main(String[] args) {
+		/* Q.5자리의 숫자를 입력받아서 입력받은 숫자를 거꾸로 출력
+		 * ex) 11456 > 65411
+		 * 각자리의 합계도 출력 > 6+5+4+1+1 = 17
+		 * ex) 19547 > 74591 => 1+9+5+4+7 = 26
+		 */
+		
+		int sum = 0;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("5자리 숫자를 입력해주세요.");
+		int sc = scan.nextInt();
+		while(sc!=0) {
+			sum+=sc%10;
+			sc/=10;
+		}
+		System.out.println(sum);
+		
+		scan.close();
+	}
+
+}

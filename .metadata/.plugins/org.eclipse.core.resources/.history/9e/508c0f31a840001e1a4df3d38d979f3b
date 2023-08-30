@@ -1,0 +1,60 @@
+package day05;
+
+public class String01 {
+
+	public static void main(String[] args) {
+		/* String 클래스 = 문자열을 다루는 클래스
+		 * String str = new String();
+		 * String str = "가나다"; //일반 자료형처럼 이용이 가능.
+		 * index 0번지부터 시작
+		 */
+		
+		String str = "Hello World~!!";
+		System.out.println(str);
+		
+		//charAt(index) : index번지에 있는 한글자를 반환
+		System.out.println("--charAt--");
+		System.out.println(str.charAt(0));
+		System.out.println(str.charAt(1));
+		System.out.println(str.charAt(2));
+		System.out.println(str.charAt(3));
+		System.out.println(str.charAt(4));
+		
+		//length : 문자열의 전체 길이 (공백 포함)
+		System.out.println(str.length());
+		
+		//compareTo(str) : str문자열과 비교하여 같으면 0,
+		//사전순으로 앞이면 -1, 뒤면 1 //문자열 정렬시 사용
+		System.out.println("--compareTo");
+		System.out.println("b".compareTo("a"));
+		System.out.println("b".compareTo("b"));
+		System.out.println("b".compareTo("c"));
+		
+		//concat(str) : 이어붙이기 (+연산자와 같은 의미)
+		System.out.println("--concat--");
+		System.out.println("abc".concat("def"));
+		System.out.println("abc"+"def");
+		
+		//equals(str) : 두 문자열이 같은지 확인(대소문자 구분)
+		// == 주소가 같은지 확인 / equals 내용이 같은지 확인
+		System.out.println("--equals--");
+		System.out.println("abc".equals("abc"));
+		System.out.println("abc".equals("def"));
+		
+		//indexOf(str) : 문자의 위치를 찾아주는 기능.
+		//찾는 문자가 없으면 -1 리턴
+		System.out.println("--indexOf--");
+		System.out.println("abc".indexOf("a"));
+		System.out.println("abc".indexOf("f"));
+		String email = "dbsdbs956@naver.co.kr";
+		System.out.println(email.indexOf("@"));
+		System.out.println(email.indexOf("."));
+		System.out.println(email.lastIndexOf("."));
+		
+		//substring : 문자열 추출
+		System.out.println("--substring--");
+		System.out.println(email.substring(0,9));
+
+	}
+
+}

@@ -1,0 +1,77 @@
+package day09;
+
+import java.util.Scanner;
+
+public class 과제1 {
+	static Scanner scan = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Student1 s1 = new Student1();
+		Student1 s2 = new Student1();
+		
+		
+		System.out.println("이름, 나이, 번호를 입력해주세요.");
+		String n1 = scan.next();
+		int a1 = scan.nextInt();
+		String num1 = scan.next();
+		s1.info(n1, a1, num1);
+		
+		String n2 = scan.next();
+		int a2 = scan.nextInt();
+		String num2 = scan.next();
+		s2.info(n2, a2, num2);
+		
+		for(int i=1; i<=2; i++) {
+			System.out.println("이름, 나이 번호를 입력해주세요.");
+			String s = scan.next();
+			int a = scan.nextInt();
+			String num = scan.next();
+			s1.info(n1, a1, num1);
+		}
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
+
+class Student1{
+	String name;
+	int age;
+	String number;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getNumber() {
+		return number;
+	}
+	public void setNumber(String number) {
+		this.number = number;
+	}
+	
+	public void info(String n, int a, String num) {
+		System.out.println(n+"("+a+") "+num);
+	}
+	
+	
+	
+	
+	
+	
+}

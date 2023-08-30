@@ -1,0 +1,54 @@
+package day07;
+
+public class Method04 {
+
+	public static void main(String[] args) {
+		/* 메서드 : 기능을 하기 위한 코드 조각
+		 * 
+		 * 접근제한자 리턴타입 메서드명(매개변수){
+		 * 코드;
+		 * return; << 메서드 종료구문 void일 때도 작성하기도함 (메서드 종료를 위해)
+		 * ...(실행불가능)
+		 * }
+		 * 
+		 * return : 메서드에서 전달해야하는 값을 전달하는 역할
+		 * 메서드에서 return을 만나면 리턴 타입의 값을 전달하고, 메서드를 종료
+		 */
+		/* 1. 랜덤(1~100) 정수 5개를 배열에 담는 메서드 (정수 배열을 리턴)
+		 * 2. 배열을 전달받아서 평균을 연산하는 메서드(평균을 리턴)
+		 * 3. 배열의 정수 5개와 평균을 출력하는 메서드
+		 * 메인에서는 연산식이 있으면 안됨.
+		 */
+		
+		int[] r = random(a,b,c,d,e);
+		
+		
+
+	}
+	/* 랜덤(1~100) 정수 5개를 배열에 담는 메서드 (정수 배열을 리턴)
+	 * 리턴타입 : 배열
+	 * 매개변수 : 랜덤정수 5개
+	 * 메서드명 : random
+	 */
+	public static int[] random(int a, int b, int c, int d, int e) {
+		a = (int)(Math.random()*100)+1;
+		b = (int)(Math.random()*100)+1;
+		c = (int)(Math.random()*100)+1;
+		d = (int)(Math.random()*100)+1;
+		e = (int)(Math.random()*100)+1;
+		int[] arr = new int[5];
+		return arr;
+	}
+	/* 배열을 전달받아서 평균을 연산하는 메서드 (평균을 리턴)
+	 * 리턴타입 : int
+	 * 매개변수 : 배열
+	 * 메서드명 : avg
+	 */
+	
+	/* 배열의 정수 5개와 평균을 출력하는 메서드(출력) =>void
+	 * 리턴타입 : void
+	 * 매개변수 : 배열, int
+	 * 메서드명 : result
+	 */
+
+}
